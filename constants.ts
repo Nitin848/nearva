@@ -1,0 +1,82 @@
+import { Product, Category, UserReview } from './types';
+
+export const PRODUCTS: Product[] = [
+  {
+    id: '1',
+    name: 'The Aurora Ring',
+    price: 1250,
+    category: Category.RINGS,
+    description: 'An ethereal band of 18k gold set with a solitaire diamond that captures the morning light.',
+    image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=800&q=80',
+    featured: true,
+  },
+  {
+    id: '2',
+    name: 'Serenity Pearl Necklace',
+    price: 890,
+    category: Category.NECKLACES,
+    description: 'Freshwater pearls strung on a delicate silk thread, finished with a gold clasp.',
+    image: 'https://images.unsplash.com/photo-1599643478518-17488fbbcd75?auto=format&fit=crop&w=800&q=80',
+    featured: true,
+  },
+  {
+    id: '3',
+    name: 'Lunar Drop Earrings',
+    price: 450,
+    category: Category.EARRINGS,
+    description: 'Minimalist silver drops that sway gently with every movement. Perfect for evening wear.',
+    image: 'https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=800&q=80',
+    featured: false,
+  },
+  {
+    id: '4',
+    name: 'Golden Hour Bracelet',
+    price: 620,
+    category: Category.BRACELETS,
+    description: 'A structured cuff bracelet crafted from hammered gold vermeil.',
+    image: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=800&q=80',
+    featured: false,
+  },
+  {
+    id: '5',
+    name: 'Eclipse Diamond Band',
+    price: 2100,
+    category: Category.RINGS,
+    description: 'A full eternity band featuring pavé-set black diamonds for a bold, modern look.',
+    image: 'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=800&q=80',
+    featured: true,
+  },
+  {
+    id: '6',
+    name: 'Solstice Pendant',
+    price: 1150,
+    category: Category.NECKLACES,
+    description: 'A radiant sun motif encrusted with sapphires and diamonds.',
+    image: 'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&w=800&q=80',
+    featured: false,
+  },
+  {
+    id: '7',
+    name: 'Velvet Studs',
+    price: 320,
+    category: Category.EARRINGS,
+    description: 'Deep red ruby studs set in rose gold prongs.',
+    image: 'https://images.unsplash.com/photo-1617038224531-16d69e8b6343?auto=format&fit=crop&w=800&q=80',
+    featured: false,
+  },
+  {
+    id: '8',
+    name: 'Infinity Chain',
+    price: 550,
+    category: Category.BRACELETS,
+    description: 'Interlocking links symbolizing eternal connection.',
+    image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=800&q=80',
+    featured: false,
+  },
+];
+
+export const REVIEWS: UserReview[] = [
+  { id: '1', user: 'Eleanor R.', rating: 5, comment: 'Absolutely stunning craftsmanship. The packaging was exquisite.' },
+  { id: '2', user: 'James T.', rating: 5, comment: 'Bought the Aurora Ring for my fiancée. She hasn’t stopped looking at it.' },
+  { id: '3', user: 'Sophia L.', rating: 4, comment: 'Beautiful piece, though shipping took a day longer than expected.' },
+];
