@@ -10,6 +10,7 @@ interface StoreContextType {
   updateQuantity: (productId: string, delta: number) => void;
   toggleWishlist: (productId: string) => void;
   setIsCartOpen: (isOpen: boolean) => void;
+  clearCart: () => void;
   cartTotal: number;
 }
 
@@ -75,6 +76,10 @@ export const StoreProvider: React.FC<{ children: ReactNode }> = ({ children }) =
     );
   };
 
+  const clearCart = () => {
+    setCart([]);
+  };
+
   const cartTotal = cart.reduce((total, item) => total + (item.price * item.quantity), 0);
 
   return (
@@ -87,6 +92,7 @@ export const StoreProvider: React.FC<{ children: ReactNode }> = ({ children }) =
       updateQuantity,
       toggleWishlist,
       setIsCartOpen,
+      clearCart,
       cartTotal
     }}>
       {children}
